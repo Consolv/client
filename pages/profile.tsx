@@ -1,5 +1,7 @@
 import { NextPage } from 'next';
 import PrivacyBox from '@components/profile/privacy-box';
+import LicenseBox from '@components/profile/license-box';
+import PlatformBox from '@components/profile/platform-box';
 
 const Profile: NextPage = () => {
   return (
@@ -11,7 +13,10 @@ const Profile: NextPage = () => {
         <div className="basis-1/2">
           <PrivacyBox />
         </div>
-        <div className="basis-1/2 flex flex-col"></div>
+        <div className="basis-1/2 flex flex-col space-y-10">
+          <LicenseBox />
+          <PlatformBox />
+        </div>
       </div>
     </div>
   );
