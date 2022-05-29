@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <a>홈</a>
         </Link>
         <Link href="/upload">
-          <a>업로드</a>
+          <a className="border-b-2 border-blue-500">업로드</a>
         </Link>
         <Link href="/contents">
           <a>나의 콘텐츠</a>
