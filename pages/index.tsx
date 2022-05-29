@@ -5,7 +5,7 @@ import VideoBox from '@components/box/video-box';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col bg-no-repeat bg-fixed" style={{ backgroundImage: 'url(/background1.png);' }}>
+    <div className="flex flex-col bg-no-repeat" style={{ backgroundImage: 'url(/background1.png);' }}>
       <div className="w-11/12 m-auto">
         <div className="flex flex-col mt-12 space-y-5 pb-24">
           <h2 className="font-medium text-lg mb-5">저작권 원본 증명 서비스</h2>
