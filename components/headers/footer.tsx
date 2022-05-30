@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   };
   return (
     <div className="w-full h-52 bg-[#343434]">
-      <div className="w-5/6 m-auto flex flex-row py-10">
+      <div className="max-w-[1640px] w-5/6 m-auto flex flex-row py-10">
         <div>
           <Image className="basis-1/3 flex justify-start items-start" src="/logo-footer.svg" width={261} height={53} />
         </div>
