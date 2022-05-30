@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const router = useRouter();
   return (
     <div className="w-full fixed bg-white z-40">
-      <div className="w-5/6 m-auto text-black">
+      <div className="max-w-[1640px] w-5/6 m-auto text-black">
         <div className="flex flex-row justify-between">
           <div className="my-5">
             <Image src="/logo.svg" width={227} height={45} />

@@ -9,16 +9,16 @@ import Partners from '@components/main/partners';
 const Home: NextPage = () => {
   return (
     <div className="flex flex-col">
-      <div className="w-5/6 m-auto">
+      <div className="max-w-[1640px] w-5/6 m-auto">
         <Description />
       </div>
       <div className="bg-blue-400">
-        <div className="w-5/6 m-auto">
+        <div className="max-w-[1640px] w-5/6 m-auto">
           <Plan />
         </div>
       </div>
       <div className="bg-white">
-        <div className="w-5/6 m-auto">
+        <div className="max-w-[1640px] w-5/6 m-auto">
           <Partners />
         </div>
       </div>

@@ -7,12 +7,10 @@ import Footer from '@components/headers/footer';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="bg-black text-white">
-      <div className="max-w-[1640px]">
-        <BackgroundLine />
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-      </div>
+      <BackgroundLine />
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }
