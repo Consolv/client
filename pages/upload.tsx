@@ -14,7 +14,7 @@ const Upload: NextPage = () => {
       </div>
       <div className="w-3/5 m-auto h-40">
         <label className="block w-full h-full outline-none border-white border-2 border-dashed rounded-xl">
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-evenly items-center h-full">
             <span className="text-2xl font-md">드래그 앤 드롭으로 파일을 업로드하세요</span>
             <div className="h-[1px] w-2/5 bg-gray-300" />
             <div className="w-36 h-9 bg-[#4F7FFF] rounded-lg flex justify-center items-center text-sm font-light">파일 선택하기</div>
@@ -23,7 +23,7 @@ const Upload: NextPage = () => {
         </label>
       </div>
       <div className="flex flex-row w-3/5 m-auto my-5 space-x-5">
-        <div className="basis-1/2">
+        <div className="basis-1/2 bg-black">
           <Input name="제목" type="text" focus={true} register={register('title')} />
         </div>
         <div className="flex flex-col basis-1/2">

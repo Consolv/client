@@ -14,11 +14,7 @@ interface InputProps {
 const Input: React.FC<InputProps> = ({ name, type, register, required = false, placeholder, focus, backgroundColor = 'black' }) => {
   return (
     <div className={`relative ${!focus ? 'text-gray-400' : ''}`}>
-      <span
-        className={`absolute text-xs font-light -top-2 left-3 px-1 transition-colors ease-out ${
-          focus ? 'bg-[' + backgroundColor + ']' : 'bg-black'
-        }`}
-      >
+      <span className={`absolute text-xs font-light -top-2 left-3 px-1 transition-colors ease-out ${focus ? 'bg-blue-500' : 'bg-black'}`}>
         {name}
       </span>
       <input
@@ -30,6 +26,7 @@ const Input: React.FC<InputProps> = ({ name, type, register, required = false, p
           !focus ? 'border-gray-400' : 'border-white'
         }`}
         disabled={!focus}
+        autoComplete="off"
       />
     </div>
   );

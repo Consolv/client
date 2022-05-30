@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className="max-w-[1640px] w-5/6 m-auto">
           <Description />
         </div>
-        <div className="bg-blue-400">
+        <div className="bg-blue-500">
           <div className="max-w-[1640px] w-5/6 m-auto">
             <Plan />
           </div>

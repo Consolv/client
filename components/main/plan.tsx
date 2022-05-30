@@ -3,9 +3,9 @@ import RadioButton from '@components/base/radio-button';
 
 const Plan: React.FC = () => {
   return (
-    <div className="w-5/6 m-auto flex flex-col my-10">
+    <div className="w-5/6 m-auto flex flex-col my-16">
       <div>
-        <h1 className="text-4xl font-bold">ConSolv®플랜 안내</h1>
+        <h1 className="text-4xl font-bold my-3">ConSolv®플랜 안내</h1>
         <p>
           첫 해 50% 할인, 연간 결재 시 20% 할인 혜택 등
           <br />
@@ -13,10 +13,10 @@ const Plan: React.FC = () => {
         </p>
       </div>
 
-      <form className="mt-10 w-11/12 flex flex-row text-black bg-white m-auto py-8 rounded-xl">
-        <div className="flex flex-row w-11/12 m-auto space-x-5">
-          <div className="w-1/3 m-auto">
-            <div className="basis-1/3 flex flex-col space-y-6">
+      <form className="mt-10 w-5/6 flex flex-row text-black bg-white m-auto py-8 rounded-xl">
+        <div className="flex flex-row w-full">
+          <div className="basis-2/5">
+            <div className="w-5/6 m-auto flex flex-col space-y-6">
               <div className="flex flex-col space-y-2">
                 <span className="font-bold text-lg">사용자 수는 몇명인가요?</span>
                 <div className="flex flex-row border-blue-500 border-b-2 font-medium">
@@ -27,8 +27,8 @@ const Plan: React.FC = () => {
               <div className="flex flex-col space-y-2">
                 <span className="font-bold text-lg">회원 유형</span>
                 <div className="flex flex-row space-x-10">
-                  <RadioButton name="service" title="개인 크리에이터" value="personal" />
-                  <RadioButton name="service" title="기업(개인, 법인 사업자)" value="enterprise" />
+                  <RadioButton name="service" backgroundColor="white" checked title="개인 크리에이터" value="personal" />
+                  <RadioButton name="service" backgroundColor="white" title="기업(개인, 법인 사업자)" value="enterprise" />
                 </div>
               </div>
               <div className="flex flex-col border-blue-500 border-b-2 space-y-2">
@@ -40,14 +40,14 @@ const Plan: React.FC = () => {
               <div className="flex flex-col space-y-2">
                 <span className="font-bold text-lg">결제 방식</span>
                 <div className="flex flex-row space-x-10">
-                  <RadioButton name="payment" title="연간 (20%할인)" value="yearly" />
-                  <RadioButton name="payment" title="월간" value="monthly" />
+                  <RadioButton name="payment" backgroundColor="white" checked title="연간 (20%할인)" value="yearly" />
+                  <RadioButton name="payment" backgroundColor="white" title="월간" value="monthly" />
                 </div>
               </div>
             </div>
           </div>
-          <div className="basis-2/3 flex flex-col">
-            <div className="w-2/3 m-auto h-full space-y-6">
+          <div className="basis-3/5 flex flex-col items-end">
+            <div className="w-5/6 m-auto  h-full space-y-6">
               <span className="font-bold text-lg mb-5 block">총 이용요금</span>
               <div>
                 <div className="flex flex-col text-gray-400 text-sm space-y-1">
