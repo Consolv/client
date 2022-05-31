@@ -11,10 +11,14 @@ interface InputProps {
   placeholder?: string;
 }
 
-const Input: React.FC<InputProps> = ({ name, type, register, required = false, placeholder, focus, backgroundColor = 'black' }) => {
+const Input: React.FC<InputProps> = ({ name, type, register, required = false, placeholder, focus, backgroundColor = 'blue-500' }) => {
   return (
     <div className={`relative ${!focus ? 'text-gray-400' : ''}`}>
-      <span className={`absolute text-xs font-light -top-2 left-3 px-1 transition-colors ease-out ${focus ? 'bg-blue-500' : 'bg-black'}`}>
+      <span
+        className={`absolute text-xs font-light -top-2 left-3 px-1 transition-colors ease-out ${
+          focus ? `bg-${backgroundColor}` : 'bg-black'
+        }`}
+      >
         {name}
       </span>
       <input
