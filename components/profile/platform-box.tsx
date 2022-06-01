@@ -23,10 +23,13 @@ const PlatformBox: React.FC = () => {
   return (
     <React.Fragment>
       {focus && (
-        <div className="w-[100vw] h-[100vh] fixed bg-black opacity-60 top-0 left-0 z-0 pointer-events-none transition-colors ease-out duration-300" />
+        <div
+          className="fixed inset-0 opacity-60 bg-black z-40 pointer-events-none transition-colors ease-out duration-300"
+          aria-hidden="true"
+        />
       )}
       <div
-        className={`w-full flex flex-col px-8 py-6 rounded-lg transition-colors ease-out duration-150 ${
+        className={`w-full flex flex-col px-8 py-6 rounded-lg transition-colors ease-out duration-150 z-50 ${
           focus ? 'bg-[#4F7FFF] opacity-90' : null
         }`}
       >
